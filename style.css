@@ -1,0 +1,205 @@
+:root {
+    --ink: #1B2A41;
+    --paper: #F6F7F2;
+    --band: #E6ECE4;
+    --accent: #0F766E;
+    --accent-dark: #0B5C56;
+    --sun: #F2A541
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px
+}
+
+body {
+    font-family: 'Newsreader', Georgia, serif;
+    font-size: 1.15rem;
+    background: var(--paper);
+    color: var(--ink)
+}
+
+h1,
+h2,
+h3,
+.navbar-brand,
+.btn,
+.nav-link {
+    font-family: 'Bricolage Grotesque', system-ui, sans-serif
+}
+
+h1 {
+    font-weight: 800;
+    font-size: clamp(2.2rem, 5vw, 3.6rem);
+    line-height: 1.08;
+    max-width: 18ch
+}
+
+h2 {
+    font-weight: 700
+}
+
+.py-6 {
+    padding: 5rem 0
+}
+
+.band {
+    background: var(--band)
+}
+
+.site-nav {
+    background: var(--paper);
+    border-bottom: 1px solid #d5dccf
+}
+
+.navbar-brand {
+    font-weight: 800;
+    color: var(--ink)
+}
+
+.nav-link {
+    color: var(--ink);
+    font-weight: 500
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--accent)
+}
+
+.hero {
+    padding: 5rem 0 4rem
+}
+
+.hero-kicker {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    color: var(--accent);
+    font-weight: 700
+}
+
+.hero .lead {
+    max-width: 46ch;
+    margin: 1.2rem 0 2rem
+}
+
+.avatar {
+    width: min(260px, 70vw);
+    aspect-ratio: 1;
+    border-radius: 50% 50% 50% 12%;
+    background: var(--ink);
+    color: var(--sun);
+    display: inline-grid;
+    place-items: center;
+    font: 800 4.5rem 'Bricolage Grotesque', sans-serif;
+    box-shadow: 14px 14px 0 var(--sun)
+}
+
+.btn-accent {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff
+}
+
+.btn-accent:hover,
+.btn-accent:focus {
+    background: var(--accent-dark);
+    border-color: var(--accent-dark);
+    color: #fff
+}
+
+.btn-outline-ink {
+    border: 2px solid var(--ink);
+    color: var(--ink)
+}
+
+.btn-outline-ink:hover {
+    background: var(--ink);
+    color: #fff
+}
+
+.about-text {
+    max-width: 62ch
+}
+
+.facts li {
+    padding: .25rem 0
+}
+
+.progress {
+    height: .6rem;
+    background: #cfd8cb;
+    margin: .3rem 0 1.2rem
+}
+
+.progress-bar {
+    background: var(--accent)
+}
+
+.project {
+    border: 1px solid #d5dccf;
+    background: #fff;
+    transition: transform .2s
+}
+
+.project:hover {
+    transform: translateY(-4px)
+}
+
+.project .card-footer {
+    background: transparent;
+    border-top: 1px solid #e3e8df
+}
+
+.project a {
+    color: var(--accent);
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 700;
+    text-decoration: none
+}
+
+.tag {
+    background: var(--band);
+    color: var(--ink);
+    font-weight: 500
+}
+
+.form-control {
+    border: 1.5px solid #b9c4b4;
+    border-radius: .4rem
+}
+
+.form-control:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 .2rem rgba(15, 118, 110, .2)
+}
+
+footer {
+    background: var(--ink);
+    color: #d7dde6
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid var(--sun);
+    outline-offset: 2px
+}
+
+@media (max-width:767px) {
+    .py-6 {
+        padding: 3.5rem 0
+    }
+
+    .hero {
+        padding-top: 3rem
+    }
+}
+
+@media (prefers-reduced-motion:reduce) {
+    html {
+        scroll-behavior: auto
+    }
+
+    .project {
+        transition: none
+    }
+}
